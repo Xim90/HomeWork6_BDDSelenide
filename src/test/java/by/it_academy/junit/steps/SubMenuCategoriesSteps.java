@@ -61,7 +61,7 @@ public class SubMenuCategoriesSteps {
                         .because(TestFailMessage.SUBMENU_HAVEN_NOT_DIVISION_BY_CITIES))
                 .shouldHave(anyMatch("", el -> el.getText().contains(DOLLAR))
                         .because(TestFailMessage.SUBMENU_HAVE_NOT_DIVISION_BY_PRICES))
-                .shouldHave(allMatch("", el -> el.getText().contains(ROOMS))
+                .shouldHave(anyMatch("", el -> el.getText().contains(ROOMS))
                         .because(TestFailMessage.SUBMENU_HAVE_NOT_DIVISION_BY_NUMBER_OF_ROOMS));
     }
 }
